@@ -53,7 +53,8 @@ const InputPlaces: FC<IInputPlcaes> = ({ onSuccess, type = 'from' }) => {
 
 						<div className={cn(styles.input_menu_list, `${suggestions.length || loading ? styles.check_suggestions : ''}`)}>
 							{suggestions?.map((suggestions, idx) => {
-								return <div key={idx} {...getSuggestionItemProps(suggestions, {
+								// eslint-disable-next-line react/jsx-key
+								return <div {...getSuggestionItemProps(suggestions, {
 									className: cn(styles.list, `${suggestions ? styles.suggestions_active : styles.suggestions_not_active}`)
 								})}>
 									<span>{suggestions?.description}</span>
