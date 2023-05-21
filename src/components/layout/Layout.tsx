@@ -14,10 +14,10 @@ interface ILayout {
 
 
 const Layout: FC<ILayout> = ({ children, title }) => {
-	const [isLoading, setIsLoading] = useState<boolean>(true)
+	const [isLoading, setIsLoading] = useState<boolean>(false)
 
 	useEffect(() => {
-		setIsLoading(true)
+		// setIsLoading(true)
 
 		const timeout = setTimeout(() => {
 			setIsLoading(false)
@@ -38,7 +38,7 @@ const Layout: FC<ILayout> = ({ children, title }) => {
 
 			<Script strategy='beforeInteractive' src={`https://maps.googleapis.com/maps/api/js?key=${process.env.MAP_KEY}&libraries=places`} />
 
-			<div style={{ maxWidth: 480, minHeight: '100vh' }} className="mx-auto overflow-hidden">{isLoading ? <Loader /> : children}</div>
+			<div style={{ minHeight: '100vh' }} >{isLoading ? <Loader /> : children}</div>
 		</div>
 	)
 }
