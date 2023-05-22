@@ -1,5 +1,5 @@
 [Yandex Taxi](https://yandex-taxi-copy.vercel.app/)
-![telegram-cloud-photo-size-2-5429418238372071253-y](https://github.com/Kamolov-Daler/yandex-taxi-copy/assets/65716285/720fd712-bf84-45e6-83b2-818953f9e46d)
+<img width="1552" alt="Screen Shot 2023-05-22 at 11 48 33" src="https://github.com/kamolovd/yandex-taxi-copy/assets/65716285/bfc52844-2131-4cb7-a32d-2140aa30ce5c">
 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
