@@ -69,10 +69,6 @@ const Map = () => {
 				defaultZoom={13}
 				options={{
 					zoomControl: false,
-					fullscreenControl: false,
-					keyboardShortcuts: false,
-					clickableIcons: false,
-					scrollwheel: false,
 				}}
 				center={from?.location?.lat ? {
 					lat: from?.location?.lat,

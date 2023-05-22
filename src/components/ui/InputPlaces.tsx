@@ -30,8 +30,9 @@ const InputPlaces: FC<IInputPlcaes> = ({ onSuccess, type = 'from' }) => {
 	const isFrom = type === "from";
 
 	useEffect(() => {
-		if (isFrom) setFocus()
-		setFocus()
+		if (isFrom) {
+			setFocus()
+		}
 	}, [isFrom])
 
 	return (
